@@ -36,12 +36,12 @@ public class XiaomiPushInit {
         LoggerInterface xiaomiLogger = new LoggerInterface() {
             @Override
             public void log(String s) {
-                Log.d("xiaomiPush", s);
+                Log.d("xiaomi", s);
             }
 
             @Override
             public void log(String s, Throwable throwable) {
-                Log.d("xiaomiPush", s, throwable);
+                Log.d("xiaomi", s, throwable);
             }
 
             @Override

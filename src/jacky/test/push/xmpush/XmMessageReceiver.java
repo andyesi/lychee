@@ -14,10 +14,11 @@ public class XmMessageReceiver extends PushMessageReceiver {
         int resultCode = (int)cmdMessage.getResultCode();
         if(resultCode == ErrorCode.SUCCESS){// 命令成功
             if(MiPushClient.COMMAND_REGISTER.equals(command)){//注册
+                Log.d("push","小米注册成功，"+cmdMessage.getCommandArguments());
                 MiPushClient.setAlias(context,"CLIENT_ID",null);//设置别名
             }
             else if (MiPushClient.COMMAND_SET_ALIAS.equals(command)){//注册别名
-                //注册完成可以推消息了
+                Log.d("push","小米别名注册成功，"+cmdMessage.getCommandArguments());
             }
         }
     }

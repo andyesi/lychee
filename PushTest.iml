@@ -17,6 +17,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="MiPush_SDK_Client_2_2_5_sdk" level="project" />
+    <orderEntry type="library" name="XgPush" level="project" />
   </component>
 </module>
 

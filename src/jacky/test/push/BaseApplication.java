@@ -1,10 +1,7 @@
 package jacky.test.push;
 
 import android.app.Application;
-import android.util.Log;
-import com.xiaomi.channel.commonutils.logger.LoggerInterface;
-import com.xiaomi.mipush.sdk.Constants;
-import com.xiaomi.mipush.sdk.Logger;
+import jacky.test.push.xgpush.XingePushInit;
 import jacky.test.push.xmpush.XiaomiPushInit;
 
 /**
@@ -17,6 +14,8 @@ public class BaseApplication extends Application{
         super.onCreate();
 
         XiaomiPushInit.init(BaseApplication.this);
+
+        XingePushInit.init(BaseApplication.this);
     }
 
 
